@@ -25,6 +25,7 @@ $app = new Illuminate\Foundation\Application(
 | incoming requests to this application from both the web and CLI.
 |
 */
+require_once __DIR__ . '/helpers.php';
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
