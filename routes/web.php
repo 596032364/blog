@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+/**前台*/
+Route::namespace('Home')->group(function () {
+    Route::get('/', 'PagesController@root')->name('root');
 });
